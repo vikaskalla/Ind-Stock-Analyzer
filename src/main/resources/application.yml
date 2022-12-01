@@ -1,0 +1,25 @@
+server:
+  port: 8081
+
+#next steps configuration should come spring cloud configuration and apply in this applicaiton.
+stocks:
+  nse:
+    urls:
+      baseUrl: 'https://www1.nseindia.com'
+      marketStatus: '/emerge/homepage/smeNormalMktStatus.json'
+      indicesWatch: '/live_market/dynaContent/live_watch/stock_watch/liveIndexWatchData.json'
+      sectorsList: '/homepage/peDetails.json'
+      quoteInfo: '/live_market/dynaContent/live_watch/get_quote/ajaxGetQuoteJSON.jsp?series=EQ&symbol='
+      getQuote: '/live_market/dynaContent/live_watch/get_quote/GetQuote.jsp?symbol='
+      gainers: '/live_market/dynaContent/live_analysis/gainers/niftyGainers1.json'
+      losers: '/live_market/dynaContent/live_analysis/losers/niftyLosers1.json'
+      advancesDeclines: '/common/json/indicesAdvanceDeclines.json'
+      indexStocks: '/live_market/dynaContent/live_watch/stock_watch/'
+      intraday: '/charts/webtame/tame_intraday_getQuote_closing_redgreen.jsp'
+      search: '/live_market/dynaContent/live_watch/get_quote/ajaxCompanySearch.jsp?search='
+      stockOptions: '/live_market/dynaContent/live_watch/get_quote/ajaxFOGetQuoteJSON.jsp'
+      yearHigh: '/products/dynaContent/equities/equities/json/online52NewHigh.json'
+      yearLow: '/products/dynaContent/equities/equities/json/online52NewLow.json'
+      topValue: '/live_market/dynaContent/live_analysis/most_active/allTopValue1.json'
+      topVolume: '/live_market/dynaContent/live_analysis/most_active/allTopVolume1.json'
+      newChartData: '/ChartApp/install/charts/data/GetHistoricalNew.jsp'
